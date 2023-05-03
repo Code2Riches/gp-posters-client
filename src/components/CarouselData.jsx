@@ -1,0 +1,22 @@
+export const CarouselData = [
+  {
+    image:
+      "https://cdn.pixabay.com/photo/2014/10/16/01/50/ferrari-490617__340.jpg",
+  },
+  {
+    image:
+      "https://cdn.pixabay.com/photo/2016/03/26/22/32/fast-1281628__480.jpg",
+  },
+  {
+    image:
+      "https://cdn.pixabay.com/photo/2016/12/14/15/26/f1-1906649__480.jpg",
+  },
+  {
+    image:
+      "https://cdn.pixabay.com/photo/2021/09/18/00/15/max-verstappen-6633948__480.jpg",
+  },
+  {
+    image:
+      "https://cdn.pixabay.com/photo/2019/08/21/08/13/racing-car-4420497__480.jpg",
+  },
+];
