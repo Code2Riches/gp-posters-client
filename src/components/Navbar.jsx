@@ -33,7 +33,7 @@ const Navbar = (props) => {
               <Link to='/home'>Home</Link>
             </li>
             <li className='hover:text-red-900 dark:text-white dark:hover:text-red-800 cursor-pointer'>
-              <Link to='/photos'>Posters</Link>
+              <Link to='/posters'>Posters</Link>
             </li>
             <li className='hover:text-red-900 dark:text-white dark:hover:text-red-800 cursor-pointer'>
               <Link to='/blogs'>Blogs</Link>
@@ -153,12 +153,12 @@ const Navbar = (props) => {
         </li>
         <li className='hover:text-indigo-600 dark:text-white dark:hover:text-indigo-400'>
           <Link
-            to='/photos'
+            to='/posters'
             onClick={() => {
               handleClick();
             }}
           >
-            Photos
+            Posters
           </Link>
         </li>
         <li className='hover:text-indigo-600 dark:text-white dark:hover:text-indigo-400'>

@@ -3,24 +3,24 @@ import { useState, useEffect } from "react";
 import GlobalLayouts from "./layouts/GlobalLayouts";
 // import LandingPage from "./pages/LandingPage";
 import BlogsPage from "./pages/BlogsPage";
-import PricingPage from "./pages/PricingPage";
+// import PricingPage from "./pages/PricingPage";
 import PostersPage from "./pages/PostersPage";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 import Login from "./pages/Login";
-import Support from "./pages/ContactPage";
+import Support from "./pages/SupportPage";
 import ErrorPage from "./pages/ErrorPage";
 import ProfilePage from "./pages/ProfilePage";
-import { useAuth } from "./Hooks/auth";
+// import { useAuth } from "./Hooks/auth";
 const urlEndPoint = process.env.REACT_APP_URL_ENDPOINT;
 
 const App = () => {
   const [leftSideBar, setLeftSideBar] = useState(false);
-  const [nfts, setNfts] = useState([]);
+  // const [nfts, setNfts] = useState([]);
   const [theme, setTheme] = useState("light");
   const [sideBar, setSideBar] = useState(false);
   const [signUpButton, setSignUpButton] = useState(false);
-  const auth = useAuth();
+  // const auth = useAuth();
   const showLeftSideBar = () => setLeftSideBar(!leftSideBar);
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -60,16 +60,18 @@ const App = () => {
           element: <HomePage urlEndPoint={urlEndPoint} />,
         },
         {
-          path: "/photos",
-          element: (
-            <PhotosPage
-              nfts={nfts}
-              setNfts={setNfts}
-              urlEndPoint={urlEndPoint}
-              leftSideBar={leftSideBar}
-              showLeftSideBar={showLeftSideBar}
-            />
-          ),
+          path: "/posters",
+          element: <PostersPage/>,
+          
+          // (
+          //   <PostersPage
+          //     nfts={nfts}
+          //     setNfts={setNfts}
+          //     urlEndPoint={urlEndPoint}
+          //     leftSideBar={leftSideBar}
+          //     showLeftSideBar={showLeftSideBar}
+          //   />
+          // ),
         },
         {
           path: "/blogs",
@@ -83,11 +85,10 @@ const App = () => {
           path: "/support",
           element: <Support />,
         },
-        
-        {
-          path: "/pricing",
-          element: <PricingPage />,
-        },
+        // {
+        //   path: "/pricing",
+        //   element: <PricingPage />,
+        // },
         {
           path: "/login",
           element: (

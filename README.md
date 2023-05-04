@@ -1,6 +1,6 @@
 -NavBar- 
 -HomePage-
--PostersPage (photos)
+-PostersPage (Poster Assets)
 -About us
 - Tester
 -contact page (support)
